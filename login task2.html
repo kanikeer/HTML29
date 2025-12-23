@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+  * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+    body {
+        height: 100vh;
+        margin: 0;
+        display: flex;             
+        justify-content: center;    
+        align-items: center;        
+        background: url('m.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+        width: 350px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+    }
+    .login-container h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .input-box {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 16px;
+    }
+    .input-box::placeholder {
+        color: #ddd;
+    }
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background: #6c00ff; 
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .login-btn:hover {
+        background: #4b00cc;
+    }
+    .register-link {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .register-link a {
+       color: grey;
+       text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" class="input-box">
+    <input type="password" placeholder="Password" class="input-box">
+    <button class="login-btn">Login</button>
+    <p class="register-link">Not a member? <a href="#">sign up</a></p>
+  </div>
+    
+</body>
+</html>

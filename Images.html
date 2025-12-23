@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .image{
+                row-gap: 70px;
+                column-gap: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .image img{
+                width:300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius:8px;
+            }
+            @media (max-width: 992px) {
+                .image img {
+                    width: 230px;
+                    height: 230px;
+                }
+            }
+            @media (max-width: 600px) {
+                .image img {
+                    width: 100%;
+                    height: auto;
+                }
+                .image {
+                    gap: 30px;
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image">
+            <img src="arrangements.jpg" alt="arrangements">
+            <img src="auto1.jpg" alt="auto">
+            <img src="b.jpg" alt="b">
+            <img src="Chains.jpg" alt="chains">
+            <img src="wall decor.jpg" alt="wall">
+            <img src="Design.jpg" alt="design">
+            <img src="Earings.jpg" alt="Earings">
+            <img src="f.jpg" alt="f">
+            <img src="Gift.jpg" alt="gift">
+            <img src="hazel .jpg" alt="hazel">
+            <img src="l.jpg" alt="l">
+            <img src="Majestic.jpg" alt="majestic">
+        </div>
+    </body>
+</html>

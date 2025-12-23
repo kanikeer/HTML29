@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+        body {
+            margin: 0;
+            background: #663399;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .swatch {
+            position: relative;
+            width: 70px;
+            height: 225px;
+        }
+        .card {
+            position: absolute;
+            width: 70px;
+            height: 225px;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            border-left: 3px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+            transform-origin: center 90%;
+            animation: rotateCard 5s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        .card::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card:nth-child(1) {
+            background: #815A8F;
+            --angle: -65deg;
+        }
+        .card:nth-child(2) {
+            background: #6730EC;
+            --angle: -40deg;
+        }
+        .card:nth-child(3) {
+            background: #9ED763;
+            --angle: -15deg;
+        }
+        .card:nth-child(4) {
+            background: #FBD400;
+            --angle: 15deg;
+        }
+        .card:nth-child(5) {
+            background: #FF9000;
+            --angle: 40deg;
+        }
+        .card:nth-child(6) {
+            background: #F73F52;
+            --angle: 65deg;
+        }
+        @keyframes rotateCard {
+            0%, 90%, 100% {
+                transform: rotate(0deg);
+            }
+            30%, 70% {
+                transform: rotate(var(--angle));
+            }
+        }
+        </style>
+        </head>
+        <body>
+            <div class="swatch">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </body>
+</html>

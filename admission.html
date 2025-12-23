@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exact Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 20px;
+    }
+
+    .main-table, .academic-table, .sibling-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .main-table td, .academic-table th, .academic-table td, .sibling-table th, .sibling-table td {
+      border: 1px solid black;
+      padding: 4px;
+    }
+
+    .checkbox-label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .section-title {
+      background-color: #ccc;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid black;
+      padding: 4px;
+    }
+
+    .box-input {
+      border: 1px solid black;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 1px;
+    }
+
+    .photo-box {
+      border: 1px solid black;
+      width: 110px;
+      height: 140px;
+      text-align: center;
+      font-size: 12px;
+      vertical-align: top;
+    }
+
+    .attach-box {
+      font-size: 11px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .no-border {
+      border: none;
+    }
+
+    .input-grid td {
+      border: none;
+      padding: 2px;
+    }
+
+    .small-text {
+      font-size: 11px;
+    }
+
+    .input-cell {
+      border: 1px solid black;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      margin: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="main-table">
+    <tr>
+      <td style="width: 30%;">
+        <div class="bold">CLASS</div>
+        <label class="checkbox-label"><input type="checkbox"> 9th</label><br>
+        <label class="checkbox-label"><input type="checkbox"> 10th</label><br>
+        <label class="checkbox-label"><input type="checkbox"> F.Sc. (Part-I)</label><br>
+        <label class="checkbox-label"><input type="checkbox"> F.Sc. (Part-II)</label><br>
+        <label class="checkbox-label"><input type="checkbox"> I.C.S.</label><br>
+      </td>
+      <td style="width: 30%;">
+        <div class="bold">GROUP</div>
+        <label class="checkbox-label"><input type="checkbox"> Biology Group</label><br>
+        <label class="checkbox-label"><input type="checkbox"> Computer Group</label><br>
+        <label class="checkbox-label"><input type="checkbox"> Pre-Medical</label><br>
+        <label class="checkbox-label"><input type="checkbox"> Pre-Engg.</label><br>
+        <label class="checkbox-label"><input type="checkbox"> Gen. Science (with Stats & Economics)</label><br>
+      </td>
+      <td class="attach-box" style="width: 25%;">
+        <b>Attachments Required</b><br>
+        <input type="checkbox"> Passport Size Photos (2)<br>
+        <input type="checkbox"> Copy of CNIC/Form B<br>
+        <input type="checkbox"> Academic Record<br>
+        <input type="checkbox"> Copy of Last Card<br>
+        <input type="checkbox"> Copy of Character Certificate<br>
+      </td>
+      <td class="photo-box">
+        Photograph<br>(Passport Size)
+      </td>
+    </tr>
+  </table>
+
+  <table class="main-table">
+    <tr>
+      <td><b>Reg. No.:</b> __________</td>
+      <td><b>Campus:</b> __________</td>
+      <td><b>Starting Date:</b> __________</td>
+    </tr>
+  </table>
+
+  <div class="section-title">STUDENT'S INFORMATION</div>
+
+  <table class="input-grid" width="100%">
+    <tr>
+      <td><b>Name (Block Letters):</b></td>
+      <td colspan="3">
+        <!-- 25 character boxes -->
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Father’s Name (Block Letters):</b></td>
+      <td colspan="3">
+        <!-- 25 character boxes -->
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Date of Birth:</b></td>
+      <td>
+        <div class="input-cell"></div><div class="input-cell"></div> -
+        <div class="input-cell"></div><div class="input-cell"></div> -
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+      </td>
+      <td><b>Nationality:</b></td>
+      <td>
+        <div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div><div class="input-cell"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Present Address:</b></td>
+      <td colspan="3"><div class="input-cell" style="width: 600px;"></div></td>
+    </tr>
+    <tr>
+      <td><b>Phone # (Res.):</b></td>
+      <td><div class="input-cell" style="width: 150px;"></div></td>
+      <td><b>Cell #:</b></td>
+      <td><div class="input-cell" style="width: 150px;"></div></td>
+    </tr>
+    <tr>
+      <td><b>E-mail:</b></td>
+      <td colspan="3"><div class="input-cell" style="width: 300px;"></div></td>
+    </tr>
+    <tr>
+      <td><b>Permanent Address (if different):</b></td>
+      <td colspan="3"><div class="input-cell" style="width: 600px;"></div></td>
+    </tr>
+  </table>
+
+  <div class="section-title">ACADEMIC</div>
+  <b>Current School / College:</b> <div class="input-cell" style="width: 400px;"></div><br><br>
+
+  <table class="academic-table">
+    <tr>
+      <th>Class Attended</th>
+      <th>Last</th>
+      <th>Institute</th>
+      <th>Marks Obt.</th>
+      <th>% age</th>
+      <th>Year</th>
+    </tr>
+    <tr><td colspan="6" style="height: 60px;"></td></tr>
+  </table>
+
+  <div class="section-title">SUBJECTS</div>
+  <div class="input-cell" style="width: 100%; height: 30px;"></div>
+
+  <div class="section-title">PARENT / GUARDIAN</div>
+  <label><input type="checkbox"> Parent</label>
+  <label><input type="checkbox"> Guardian</label>
+  <b>Relation:</b> <div class="input-cell" style="width: 150px;"></div><br><br>
+
+  <b>Name (Block Letters):</b> <div class="input-cell" style="width: 400px;"></div><br><br>
+  <b>CNIC #:</b> <div class="input-cell" style="width: 200px;"></div>
+  <b>E-mail:</b> <div class="input-cell" style="width: 200px;"></div><br><br>
+
+  <b>Contact # (Res.):</b> <div class="input-cell" style="width: 150px;"></div>
+  <b>Cell:</b> <div class="input-cell" style="width: 150px;"></div><br><br>
+
+  <b>Employed @:</b> <label><input type="checkbox"> Govt</label> <label><input type="checkbox"> Private</label><br><br>
+  <b>Designation:</b> <div class="input-cell" style="width: 200px;"></div>
+  <b>Organization:</b> <div class="input-cell" style="width: 200px;"></div><br><br>
+  <b>Deals in:</b> <div class="input-cell" style="width: 400px;"></div>
+
+  <div class="section-title">SIBLING(S)</div>
+  <table class="sibling-table">
+    <tr>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Institute</th>
+      <th>If Student</th>
+      <th>Profession</th>
+      <th>Organization</th>
+      <th>Designation</th>
+      <th>If Employed</th>
+    </tr>
+    <tr><td colspan="8" style="height: 60px;"></td></tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            body {
+                background-color: #ffffff;
+            }
+            .hero {
+                width: 100%;
+                position: relative;
+                
+            }
+            .hero img {
+                width: 100%;
+                height: 400px;
+                display: block;
+            
+            }
+            .icon-section {
+                position: absolute;
+                bottom: 20px;
+                display: flex;
+                gap: 20px;
+                
+            
+            }
+            .icon-box {
+                background-color: #ffffff;
+                width: 220px;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+    
+                
+            }
+            .icon {
+                background-color: #008b8b;
+                color: white;
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+            }
+            .icon-box h3 {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+            .icon-box p {
+                font-size: 14px;
+                color: #555;
+            }
+            .leadership-section {
+                background-color: #008b8b;
+                color: white;
+                text-align: center;
+                padding: 60px 20px 40px;
+
+            }
+            .leadership-section h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+            .leadership-section p {
+                max-width: 700px;
+                margin: 0 auto ;
+                font-size: 15px;
+            }
+            .cards-container {
+                max-width: 1100px;
+                margin: 30px auto 60px;
+                background: white;
+                border-radius: 15px;
+                padding: 40px 30px;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+            .card {
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                width: 250px;
+                padding: 20px;
+                text-align: center;
+            }
+            .card img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            .card h4 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: #000;
+            }
+            .card p {
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 10px;
+            }
+            .card a {
+                color: #008b8b;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .bottom-section {
+                background-color: #f9f9f9;
+                padding: 60px 20px;
+                text-align: center;
+            }
+            .bottom-section img {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                margin-bottom: 40px;
+            }
+            .bottom-rows {
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                margin-bottom: 40px;
+            }
+            .bottom-box {
+                max-width: 350px;
+                text-align: left;
+            }
+            .bottom-box h2 {
+                font-size: 20px;
+                color: #222;
+                margin-bottom: 10px;
+            }
+            .bottom-box p {
+                font-size: 14px;
+                color: #444;
+                line-height: 1.6;
+            }
+            .bottom-section button {
+                background-color: #008b8b;
+                color: white;
+                padding: 14px 34px;
+                border: none;
+                border-radius: 30px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            .icon-section,
+            .cards,
+            .testimonial-content {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding: 40px 20px;
+            }
+            
+            .testimonial-section {
+                background-color: #f0f0f0;
+                padding: 60px 20px;
+                text-align:right;
+            
+            }
+            
+            .testimonial-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin-top: 40px;
+                background-color: #008b8b;
+            }
+            .testimonial-grid {
+                display:flex;
+                gap: 20px;
+                
+            }
+            .testimonial-box {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 12px;
+                text-align: left;
+                
+            
+            }
+            .testimonial-image img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .testimonial-box h4 {
+                font-size: 16px;
+                color: #008b8b;
+                margin-bottom: 10px;
+                border-radius: 5px solid white;
+            }
+            .testimonial-box p {
+                font-size: 14px;
+                color: #555;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <img src="computer.jpg" alt="Hero Image">
+        <div class="icon-section">
+            <div class="icon-box">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M360-360v-200q-66 0-113-47t-47-113q0-66 47-113t113-47h320v80h-80v440h-80v-440h-80v440h-80Zm0-280v-160q-33 0-56.5 23.5T280-720q0 33 23.5 56.5T360-640Zm0-80ZM680-80l-56-56 64-64H120v-80h568l-64-64 56-56 160 160L680-80Z"/></svg></div>
+                <h3>SAMPLE<br>HEADING</h3>
+                <p>Lorem your suin sit aece dolore ainse incididunt rura.</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-320h400q66 0 113-47t47-113q0-66-47-113t-113-47H280q-66 0-113 47t-47 113q0 66 47 113t113 47Zm200-160Zm-80-240h160v-40H400v40ZM280-120v-120q-100 0-170-70T40-480q0-100 70-170t170-70h40v-40q0-33 23.5-56.5T400-840h160q33 0 56.5 23.5T640-760v40h40q100 0 170 70t70 170q0 100-70 170t-170 70v120h-80v-120H360v120h-80Z"/></svg></div>
+                <h3>SAMPLE<br>HEADING</h3>
+                <P>Ienam doipsut sad tesismun menipluse piraeicum aura.</P>
+            </div>
+            <div class="icon-box">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></div>
+                <h3>SAMPLE<br>HEADING</h3>
+                <P>Loremexipace later sit aete animan arboreo pleunou names.</P>
+            </div>
+            <div class="icon-box">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Z"/></svg></div>
+                <h3>SAMPLE<br>HEADING</h3>
+                <p>Lorem toipsiuctur sit enos minim draecis jriculured elums.</p>
+            </div>
+        </div>
+        </div>
+        <div class="leadership-section">
+            <h2>Understanding Leadership</h2>
+            <p>Lorem ipsum dolor ust amet consectetur ansqulluspland conten finr nide adial cancióp lat vietcriuo to magide amet sentan</p>
+        </div>
+            <div class="cards">
+                <div class="card">
+                    <h4>GOOD LEADERS</h4>
+                    <img src="b.jpg" alt="Good Leaders">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing piccoal auten.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="card">
+                    <h4>EFFECTIVE LEADERS</h4>
+                    <img src="b.jpg" alt="Effective Leaders">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="card">
+                    <h4>BEST DELEGATION</h4>
+                    <img src="b.jpg" alt="Best Delegation">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        
+        <div class="bottom-section">
+            <img src="man.jpg" alt="Service Lead" />
+            <div class="bottom-rows">
+            <div class="bottom-box">
+                <h2>01 DESIGN SERVICES</h2>
+                <p>Our design services are tailored to meet your unique business goals. From conceptualization to execution, we ensure every detail aligns with your brand’s identity and vision.</p>
+            </div>
+            <div class="bottom-box">
+                <h2>02 OUR PROCESS</h2>
+                <p>Our streamlined process keeps you involved and informed every step of the way. We prioritize collaboration, quality, and results that drive measurable success. Trust us to transform your ideas into powerful digital experiences.</p>
+            </div>
+        </div>
+        <button>Contact Us</button>
+        </div>
+        <div class="testimonial-section">
+            <h2>We advise leaders on strategy,<br> marketing, organization, operations</h2>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-grid">
+                    <div class="testimonial-box">
+                        <h4>Friendly 24/7 customer service</h4>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <h4>No time windows, book when you want</h4>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <h4>Affordable, upfront pricing</h4>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    </div>
+                    <div class="testimonial-box">
+                        <h4>Vetted and screened professionals</h4>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <img src="man.jpg" alt="Clients">
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>

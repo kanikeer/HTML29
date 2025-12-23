@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web tech</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .top-bar{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fff;
+                
+            }
+            .logo{
+                margin-left: 100px;
+                color: orange;
+            }
+            .s{
+                color:goldenrod;
+            }
+            .logo svg{
+                background-color:goldenrod;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-right: 400px;
+            }
+            nav ul li {
+                padding: 8px 12px;
+                cursor: pointer;
+            }
+            nav ul li.active {
+                color:sandybrown;
+            }
+            .learn-btn {
+                background-color:orange;
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .right{
+                width: 150%;
+                position: relative;
+            }
+            .right img{
+                width: 40%;
+                height:40%;
+            }
+            .quote {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 20px;
+                border-radius: 8px;
+                max-width: 80%;
+                border-left: 5px solid brown;
+            }
+            .quote p1{
+                color: lightsalmon;
+            }
+            
+            .quote-box1 h2{
+                color: darkorange;
+                font-size: 30px;
+            }
+            .quote-box1 p{
+                font-size: medium;
+            }
+            .services{
+                background-color: darkorange;
+                border-radius: 2px;
+                padding: 10px,5px;
+                width: 20%;
+                height: 20%;
+                color: #fff;
+                border-left: 3px solid brown;
+                border-right: 3px gold;
+            }
+            .service-boxes {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-right: 500px;
+                gap: 1px;
+            }
+            .service1,.service3{
+                width: 200px;
+                height: 100px;
+                border: 10px;
+                margin: 10px;
+                padding: 10px;
+                background-color: brown;
+                text-align: center;
+                color: #fff;
+            }
+            .service2,.service4{
+                width: 200px;
+                height: 100px;
+                border: 10px;
+                margin: 10px;
+                padding: 10px;
+                background-color:lightsalmon;
+                text-align: center;
+                color: #fff;
+            }
+            .service .icon {
+                font-size: 40px;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .p{
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+            .content h4{
+                color:darkorange ;
+            }
+            .color{
+                color: darkorange;
+            }
+            .c{
+                width: 200px;
+            }
+            .icons{
+                display: flex;
+                margin-top: 150px;
+                gap: 40px;
+                align-items: center;
+    
+            }
+            .icons div {
+                text-align: center;
+            }
+            
+            .content{
+                margin-bottom: 100px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg> Web <span class="s">Tech</span></div>
+            <nav>
+                <ul>
+                    <li class="active">Home</li>
+                    <li>About us</li>
+                    <li>Blog</li>
+                    <li>services</li>
+                    <li>Team</li>
+                    <li>Gallery</li>
+                    <li>Contact us</li>
+                    <button class="learn-btn">Get A Quote</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <img src="girl.jpg" alt="img">
+            <div class="quote">
+                <p1>secure IT service</p1>
+            <div class="quote-box1">
+                <h2>Semper porta<br>Vestibulum Lacinia Arcu</h2>
+                <p>Nulla quis sem At Niben Elementum imperchet Fusce Nec Tellus Sed Augue<br>Semper porta vestibulum lacinia</p>
+            </div>
+            <button class="services">Our service</button>
+            </div>
+        </div>
+        <div class="service-boxes">
+            <div class="service1">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg></div>
+                <p>IT consultancy<br> solution</p>
+            </div>
+            <div class="service2">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm240-240q-66 0-113-47t-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T442-600H282q0 33 23.5 56.5T362-520Zm300 160-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm20-70q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm28-90q21 0 35.5-14.5T832-700q0-21-14.5-35.5T782-750q-21 0-35.5 14.5T732-700q0 21 14.5 35.5T782-650ZM362-200Z"/></svg></div>
+                <p>Best Experience<br> Engineer</p>
+            </div>
+        <div class="service3">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M323-160q-11 0-20.5-5.5T288-181l-78-139h58l40 80h92v-40h-68l-40-80H188l-57-100q-2-5-3.5-10t-1.5-10q0-4 5-20l57-100h104l40-80h68v-40h-92l-40 80h-58l78-139q5-10 14.5-15.5T323-800h97q17 0 28.5 11.5T460-760v160h-60l-40 40h100v120h-88l-40-80h-92l-40 40h108l40 80h112v200q0 17-11.5 28.5T420-160h-97Zm237 0q-33 0-56.5-23.5T480-240q0-23 11-40.5t29-28.5v-342q-18-11-29-28.5T480-720q0-33 23.5-56.5T560-800q33 0 56.5 23.5T640-720q0 23-11 40.5T600-651v101l80-48q0-34 23.5-58t56.5-24q33 0 56.5 23.5T840-600q0 33-23.5 56.5T760-520q-11 0-20.5-2.5T721-530l-91 55 101 80q7-3 14-4t15-1q33 0 56.5 23.5T840-320q0 33-23.5 56.5T760-240q-37 0-60.5-28T681-332l-81-65v89q18 11 28.5 28.5T639-240q0 33-23 56.5T560-160Z"/></svg></div>
+            <p>Provide all IT<br> services</p>
+        </div>
+        <div class="service4">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></div>
+            <p>Solution for IT<br> security</p>
+        </div>
+        </div>
+        <div class="p">
+        <div class="image">
+            <img src="computer.jpg" alt="img" width="90%" height="90%">
+        </div>
+        <div class="content">
+            <h4>ABOUT US</h4>
+            <h2>Preparing For Your Success<br>Provide IT <span class="color">Solutions!</span></h2>
+            <p>You deserve care that's simple personalized and hassle-free.safe<br>insurance that's designed to help you thrive.Usage in Merchandise<br>cost and antwork.</p>
+        </div>
+        <div class="c">
+            <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm240-240q-66 0-113-47t-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T442-600H282q0 33 23.5 56.5T362-520Zm300 160-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm20-70q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm28-90q21 0 35.5-14.5T832-700q0-21-14.5-35.5T782-750q-21 0-35.5 14.5T732-700q0 21 14.5 35.5T782-650ZM362-200Z"/></svg></div>
+        </div>
+        <div class="c">
+            <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-160v-240h120v240H200Zm240 0v-440h120v440H440Zm240 0v-640h120v640H680Z"/></svg></div>
+        </div>
+        </div>
+    </body>
+</html>

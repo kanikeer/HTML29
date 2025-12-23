@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <style>
+        body {
+            margin: 0;
+            background-color: #ffff;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            "header header header"
+            "sidebar main rightbar "
+            "footer footer footer";
+            grid-template-columns:200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 1rem;
+        }
+        .header {
+            grid-area: header;
+            color: orange;
+            padding: 15px;
+            text-align: center;
+            border: 5px solid orange;
+            font-style: italic;
+        }
+        .aside {
+            grid-area:sidebar;
+            color: orange;
+            padding: 15px;
+            text-align: center;
+            border: 5px solid orange;
+            font-style: italic;
+        }
+        .main {
+            grid-area:main;
+            color: orange;
+            padding: 15px;
+            text-align: center;
+            border: 5px solid orange;
+            font-style: italic;
+        }
+        .right{
+            grid-area:rightbar;
+            color: orange;
+            padding: 15px;
+            text-align: center;
+            border: 5px solid orange;
+            font-style: italic;
+        }
+        .footer {
+            grid-area: footer;
+            padding: 15px;
+            color:orange;
+            text-align: center;
+            border: 5px solid orange;
+            font-style: italic;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">Header</div>
+            <div class="aside">sidebar</div>
+            <div class="main"> main content</div>
+            <div class="right">rightbar</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

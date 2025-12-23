@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creative Agency</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: white;
+                padding: 15px 40px;
+                position:fixed;
+                width: 100%;
+            }
+            .logo {
+                font-size: 28px;
+                font-weight: bold;
+            }
+             nav ul {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                font-size: 16px;
+            }
+            nav ul li {
+                padding: 8px 12px;
+                cursor: pointer;
+            }
+            .hero {
+                width: 100%;
+                min-height: 100vh;
+                padding-top: 130px;
+                background: url('computer.jpg') no-repeat center center/cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .para h2 {
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .para p {
+                font-size: 18px;
+                text-align: center;
+                color: #666;
+                max-width: 800px;
+                line-height: 1.8;
+            }
+            .service-boxes {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                margin-top: 60px;
+                flex-wrap: wrap;
+            }
+             .service {
+                background-color: #ffffff;
+                width: 250px;
+                padding: 25px 20px;
+                border-radius: 15px;
+                text-align: center;
+            }
+            
+             .service h4 {
+                color: dodgerblue;
+                font-size: 14px;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+            .service h4:hover{
+                color: #3498db;
+            }
+            .service h4:after{
+                content: "➔";
+            }
+            .service .icon {
+                background-color: lightskyblue;
+                color: white;
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+            }
+            .service h3 {
+                margin: 10px 0;
+                font-size: 18px;
+            }
+            .service p {
+                font-size: 14px;
+                color: #555;
+                line-height: 1.6;
+            }
+            .about-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 40px;
+                background: #f6fcff;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+            .about-text {
+                max-width: 500px;
+            }
+            .about-text h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .about-text p {
+                color: #888;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
+            .about-text ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 30px;
+            }
+            .about-text ul li {
+                margin-bottom: 12px;
+                font-size: 16px;
+                padding-left: 25px;
+            }
+            .about-text ul li::before {
+                content: "➔";
+                left: 0;
+                color: #3498db;
+            }
+            .button {
+                background: #007bff;
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .button:hover{
+                background-color: #3498db;
+            }
+            .about-image img {
+               width: 200%;
+               height: 200%;
+               border-radius: 10px;
+            }
+            .services-section {
+                background-color: #f6fcff;
+                padding: 80px 40px;
+                text-align: center;
+            }
+            .services-section h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+                color: #222;
+            }
+            .services-section p {
+                color: #888;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+            .services-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+
+            .service-card {
+                background: #ffffff;
+                border-radius: 10px;
+                padding: 40px 30px;
+                width: 200px;
+            }
+            .service-card svg {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 20px;
+                background-color: cadetblue;
+            }
+            .service-card h4 {
+                font-size: 16px;
+                color: #333;
+            }
+            .team-section {
+                background-color: #f6fcff;
+                padding: 80px 40px;
+                text-align: center;
+            }
+            .team-section h2 {
+                font-size: 28px;
+                margin-bottom: 50px;
+                color: #222;
+            }
+            .team-grid {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .team-member {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                width: 220px;
+            }
+            .team-member img {
+                width: 100%;
+                height: 240px;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+            .team-member h3 {
+                margin: 0;
+                font-size: 18px;
+                color: #222;
+            }
+            .team-member .role {
+                font-size: 14px;
+                color: #666;
+                margin: 4px 0 10px;
+            }
+            .team-member .desc {
+                font-size: 14px;
+                color: #888;
+                line-height: 1.5;
+            }
+            .achievements-section {
+                background-color: #f6fcff;
+                padding: 80px 40px;
+                text-align: center;
+            }
+            .achievements-section h2 {
+                font-size: 28px;
+                color: #222;
+                margin-bottom: 50px;
+            }
+            .achievements-grid {
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                flex-wrap: wrap;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .achievement {
+                display: flex;
+                flex-direction:row;
+                align-items: center;
+                color: #333;
+                width: 180px;
+            }
+            .achievement .icon {
+                font-size: 36px;
+                color: dodgerblue;
+                margin-bottom: 10px;
+            }
+            .achievement h3 {
+                font-size: 36px;
+                color: #222;
+                font-weight: 600;
+            }
+            .achievement p {
+                font-size: 16px;
+                color: #aaa;
+            }
+            .achievement svg {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="logo">Creative Agency</div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About us</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+        <div class="para">
+            <h2>We are creative agency</h2>
+            <p>Our professional team of designers will help you to create a unique image of your company,<br>which will distinguish it from competitors and attract new customers.</p>
+        </div>
+        <div class="service-boxes">
+            <div class="service">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-560h200v-80H480v80Zm0 240h200v-80H480v80ZM360-520q33 0 56.5-23.5T440-600q0-33-23.5-56.5T360-680q-33 0-56.5 23.5T280-600q0 33 23.5 56.5T360-520Zm0 240q33 0 56.5-23.5T440-360q0-33-23.5-56.5T360-440q-33 0-56.5 23.5T280-360q0 33 23.5 56.5T360-280ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg></div>
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Aspernatur,cupiditate delectus doloremque ea enim eveniet id magni necessitatibus odio.</p>
+                <h4>Read More</h4>
+            </div>
+            <div class="service">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"/></svg></div>
+                <h3>Illustration</h3>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Aspernatur,cupiditate delectus doloremque ea enim eveniet id magni necessitatibus odio.</p>
+                <h4>Read More</h4>
+            </div>
+            <div class="service">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M640-80q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170T640-80Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm-480 0q-33 0-56.5-23.5T80-240v-304q0-8 1.5-16t4.5-16l80-184h-6q-17 0-28.5-11.5T120-800v-40q0-17 11.5-28.5T160-880h280q17 0 28.5 11.5T480-840v40q0 17-11.5 28.5T440-760h-6l66 152q-19 10-36 21t-32 25l-84-198h-96l-92 216v304h170q5 21 13.5 41.5T364-160H160Zm480-440q-42 0-71-29t-29-71q0-42 29-71t71-29v200q0-42 29-71t71-29q42 0 71 29t29 71H640Z"/></svg></div>
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Aspernatur,cupiditate delectus doloremque ea enim eveniet id magni necessitatibus odio.</p>
+                <h4>Read More</h4>
+            </div>
+        </div>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam <br>perferendis laborum sed rerum, asperiores, unde obcaecati.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+            <button class="button">Learn More</button>
+            </div>
+            <div class="about-image">
+                <img src="man1.jpg" alt="img">
+            </div>
+        </div>
+        <div class="services-section">
+            <h2>The services we offer you</h2>
+            <p>Lorem ipsum dolor amet, consecte tempor incididunt</p>
+            <div class="services-grid">
+                <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <h4>Lorem Ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                <h4>Lorem Ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m176-120-56-56 301-302-181-45 198-123-17-234 179 151 216-88-87 217 151 178-234-16-124 198-45-181-301 301Zm24-520-80-80 80-80 80 80-80 80Zm355 197 48-79 93 7-60-71 35-86-86 35-71-59 7 92-79 49 90 22 23 90Zm165 323-80-80 80-80 80 80-80 80ZM569-570Z"/></svg>
+                <h4>Lorem ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-80v-80h140v-180h180v-180h180v-180h180v-140h80v220H700v180H520v180H340v180H120Z"/></svg>
+                <h4>Lorem ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                <h4>Loerm ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
+                <h4>Lorem ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M720-120v-120H600v-80h120v-120h80v120h120v80H800v120h-80ZM160-560h640-640Zm80 440v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v32q-18-10-38-17.5T800-516q0-17-11.5-30.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h342q-16 17-28 37t-20 43H320v160h214q7 22 20 42t28 38H240Zm400-520v-120H320v120h-80v-200h480v200h-80Z"/></svg>
+                <h4>Lorem ipsum</h4>
+            </div>
+            <div class="service-card"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+                <h4>lorem ipsum</h4>
+            </div>
+            </div>
+        </div>
+        <div class="team-section">
+            <h2>Our Creative Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="girl.jpg" alt="img">
+                    <h3>Amanda Adams</h3>
+                    <p class="role">Designer</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="team-member">
+                    <img src="man1.jpg" alt="img">
+                    <h3>Joseph Kellen</h3>
+                    <p class="role">Real Estate</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="img">
+                    <h3>Nick Dimon</h3>
+                    <p class="role">Designer</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="team-member">
+                    <img src="man.jpg" alt="img">
+                    <h3>Steve Elliott</h3>
+                    <p class="role">Founder</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="achievements-section">
+            <h2>Our Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
+                    <h3>46</h3>
+                    <p>Completed<br>projects</p>
+                </div>
+                <div class="achievement">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17-62.5t47-43.5q60-30 124.5-46T480-440q67 0 131.5 16T736-378q30 15 47 43.5t17 62.5v112H160Zm320-400q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm160 228v92h80v-32q0-11-5-20t-15-14q-14-8-29.5-14.5T640-332Zm-240-21v53h160v-53q-20-4-40-5.5t-40-1.5q-20 0-40 1.5t-40 5.5ZM240-240h80v-92q-15 5-30.5 11.5T260-306q-10 5-15 14t-5 20v32Zm400 0H320h320ZM480-640Z"/></svg>
+                <h3>4</h3>
+                <p>professional<br>Workers</p>
+                </div>
+                <div class="achievement">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M582-298 440-440v-200h80v167l118 118-56 57ZM440-720v-80h80v80h-80Zm280 280v-80h80v80h-80ZM440-160v-80h80v80h-80ZM160-440v-80h80v80h-80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <h3>300</h3>
+                <p>Hours of<br>Work</p>
+                </div>
+                <div class="achievement">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"/></svg>
+                <h3>400</h3>
+                <p>Satisfied<br> clients</p>
+                </div>
+            </div>
+    </body>
+</html>

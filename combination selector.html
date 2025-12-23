@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> combination selector</title>
+        <style>
+            h3~p{
+                background-color:wheat;
+            }
+            
+            p:last-child{
+                color: aliceblue;
+            }
+            p::first-line{
+                color: blue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>combination selector</h3>
+        <p>The descendant combinator matches all elements that are descendants of a specified element</p>
+        <p>The subsequent-sibling combinator selects all elements that are next siblings of a specified element.</p>
+        <div>
+            <p>The descendant combinator matches all elements that are descendants of a specified element.</p>
+            <p>The following example selects all elements inside  elements:</p>
+            <p>The child combinator selects all elements that are the children of a specified element.</p>
+            <p>The following example selects all elements that are children of a element:</p>
+            <section>
+                <p>The next sibling combinator is used to select an element that is directly after another specific element.</p>
+                <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+                <p>The following example selects the first element that are placed immediately after elements:</p>
+            </section>
+        </div>
+        <div>
+            <p>The subsequent-sibling combinator selects all elements that are next siblings of a specified element.</p>
+            <section>
+                <p>The following example selects all  elements that are next siblings of elements: </p>
+            </section>
+        </div>
+    </body>
+</html>

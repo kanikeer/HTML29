@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page with image</title>
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+           }
+            .main-container {
+              display: flex;
+              height: 100vh;
+            }
+            .left {
+              width: 50%;
+              padding: 60px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+           }
+           .right {
+              width: 50%;
+              position: relative;
+            }
+            .right img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+           }
+           .quote-box {
+              position: absolute;
+              bottom: 40px;
+              left: 40px;
+              background-color: rgba(255, 255, 255, 0.8);
+              padding: 20px;
+              border-radius: 8px;
+              max-width: 80%;
+           }
+           .quote-box p {
+              font-size: 16px;
+              color: #333;
+           }
+
+           .quote-box .name {
+              margin-top: 10px;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            .quote-box .role {
+               font-size: 12px;
+               color: gray;
+            }
+            input[type="text"],
+            input[type="password"] {
+               width: 50%;
+               padding: 8px;
+               margin: 8px 0;
+               border-radius: 4px;
+               border: 1px solid #ccc;
+            }
+            .c {
+               display: flex;
+               justify-content:flex-start;
+               align-items: center;
+               font-size: 14px;
+               margin-bottom: 15px;
+               gap: 20px;
+               
+            }
+            .c label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                
+            }
+
+            .c input[type="checkbox"] {
+                 margin-right: 6px;
+            
+            }
+            .signin-btn {
+                width: 50%;
+                padding: 10px;
+                background-color: navy;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 15px;
+            }
+            .google-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px 20px;
+                background-color: white;
+                color: black;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 14px;
+                cursor: pointer;
+                width:50%;
+                margin-bottom: 20px;
+            }
+            .google-icon {
+               width: 20px;
+               height: 20px;
+           }
+
+            p.signup {
+                text-align: left;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="main-container">
+        <div class="left">
+        <h2>Welcome Back</h2>
+        <p>Welcome back! Please enter your details.</p>
+        <label>Email</label>
+        <input type="text" placeholder="Enter your email">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+        <div class="c">
+          <label><input type="checkbox"> Remember for 30 days</label>
+          <p><b>Forgot password</b></p>
+        </div>
+        <button class="signin-btn">Sign in</button>
+        <button type="submit" class="google-btn">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="google-icon">
+          Sign in with Google
+        </button>
+        <p class="signup">Don't have an account? <b>Sign up for free</b></a></p>
+       </div>
+        <div class="right">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Login image">
+        <div class="quote-box">
+          <p><em>“We’ve been using Untitled to kick start every new project and can’t imagine working without it.”</em></p>
+        <div class="name">Andi Lane</div>
+        <div class="role">Founder, Catalog</div>
+        </div>
+       </div>
+       </div>
+    </body>
+</html>

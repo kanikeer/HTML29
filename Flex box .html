@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex box</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid gray;
+            }
+            .top-bar{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fff;
+                
+            }
+            .logo{
+                margin-left: 100px;
+            }
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-right: 400px;
+            }
+            nav ul li {
+                padding: 8px 12px;
+                cursor: pointer;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .para h2{
+                font-size: 35px;
+                text-align: center;
+            }
+            .para p{
+                font-size: 18px;
+                text-align: center;
+            }
+            .image-container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content:space-between;
+                align-items: center;
+                gap: 20px;
+                max-width: 640px;
+                margin: 40px auto 0;
+            }
+            .image-box {
+                width: 200px;
+                height: 150px;
+                background-color: #ccc;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                font-weight: bold;
+                color: #333;
+            }
+            
+            </style>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="logo">Skytech</div>
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>PORTFOLIO</li>
+                    <li>BLOG</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+        <div class="container">
+        <div class="para">
+            <h2>Travel & Nature Photographer</h2>
+            <p>I will high in the mountains and thoughts of all theme made that surrounded one<br>Remember my friends.We must allow the beer to disappear</p>
+        </div>
+        </div>
+        <div class="image-container">
+            <div class="image-box">Box 1</div>
+            <div class="image-box">Box 2</div>
+            <div class="image-box">Box 3</div>
+            <div class="image-box">Box 4</div>
+            <div class="image-box">Box 5</div>
+            <div class="image-box">Box 6</div>
+        </div>
+    </div>
+    </body>
+</html>
