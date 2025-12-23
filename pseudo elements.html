@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            h1::selection{
+                font-style:italic;
+                color: chocolate;
+            }
+            li::marker{
+                color: darkkhaki;
+            }
+            h4::before{
+                content:"🥰";
+            }
+            p::after{
+                content: "🥳";
+            }
+            h5::first-line{
+                color: darkturquoise;
+            }
+            h5::first-letter{
+                color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The descendant combinator matches all elements that are descendants of a specified element</h1><br>
+        <h4>The subsequent-sibling combinator selects all elements that are next siblings of a specified element</h4><br>
+        <p>The descendant combinator matches all elements that are descendants of a specified element.</p><br>
+        <h5>The following example selects all elements inside  elements:</h4>
+        <ul>
+            <li>Rose</li>
+            <li>Jasmine</li>
+            <li>Lotus</li>
+        </li>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #80c56c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            background: #f1f1f1;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .register-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .register-link a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <input type="text" placeholder="username" required>
+        <input type="password" placeholder="password" required>
+        <button class="login-btn">LOGIN</button>
+        <div class="register-link">
+            Not registered? <a href="#">Create an account</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Menu Dropdown</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color:white;
+        }
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu > li {
+            margin-right: 25px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #444;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color:white;
+            min-width: 180px;
+            z-index: 100;
+        }
+        .dropdown li {
+            margin: 0;
+        }
+        .menu li:hover .dropdown {
+            display: block;
+        }
+        .dropdown a {
+            padding: 10px 15px;
+        }
+        .dropdown a:hover {
+            background-color: #555;
+        }
+        </style>
+        </head>
+        <body>
+            <ul class="menu">
+                <li>Home</li>
+                <li>
+                    <a href="#">Starters</a>
+                    <ul class="dropdown">
+                        <li>Soup</li>
+                        <li>Garlic Bread</li>
+                        <li>Spring Rolls</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">main courses</a>
+                    <ul class="dropdown">
+                        <li>Paneer Butter Masala</li>
+                        <li>Chicken Curry</li>
+                        <li>Veg Biryani</li>
+                        <li>Fish Fry</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Desserts</a>
+                    <ul class="dropdown">
+                        <li>Ice Cream</li>
+                        <li>Gulab Jamun</li>
+                        <li>Brownie</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Drinks</a>
+                    <ul class="dropdown">
+                        <li>Lassi</li>
+                        <li>Mojito</li>
+                        <li>Cold Coffee</li>
+                        <li>Soda</li>
+                    </ul>
+                </li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </body>
+</html>

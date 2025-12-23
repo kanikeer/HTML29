@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My task</title>
+        <style>
+            img:hover {
+               width: 400px; 
+               height: auto;
+           }
+            p:hover{
+                background-color: aqua;
+            }
+            p::first-line{
+                font-style:italic;
+            }
+            p::first-letter{
+                font-style:initial;
+            }
+            table,tr,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            label:hover{
+                background-color: chartreuse;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <img src="C.jpg" alt="image" width="100" height="100">
+        <p>The descendant combinator matches all elements that are descendants of a specified element.The subsequent-sibling combinator selects all elements that are next siblings of a specified element<br>
+        The descendant combinator matches all elements that are descendants of a specified element.</p>
+        <h2> Simple Registration form</h2>
+        <form>
+            <table border="1px">
+                <tr>
+                    <td><label for="Name">name:</td>
+                        <td><input type="text" placeholder="Enter your name" name="name" required>
+            </label> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email: </td>
+                        <td><input type="email">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="phone no">phone no:</td>
+                        <td><input type="tel">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="D.O.B">D.O.B: </td>
+                        <td><input type="date">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Address">Address: </td>
+                        <td><input type="text">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Signature">Signature: </td>
+                        <td><input type="text">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Date signed">Date signed: </td>
+                        <td><input type="date">
+            </label><br></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <h2>Target attribute</h2>
+        <p1>Self tag</p1><br>
+        <a href="https://www.geeksforgeeks.org/" target="_self">open in same page</a><br>
+        <p1>Blank</p1><br>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">open in new window/tab</a><br>
+        <p1>parent</p1><br>
+        <a href="https://www.geeksforgeeks.org/" target="_parent">open in parent frame</a><br>
+        <p1>Top</p1><br>
+        <a href="https://www.geeksforgeeks.org/" target="_top">open in full window</a><br>
+        <p1>Frame</p1><br>
+        <iframe width="100" height="100"></iframe><br><br>
+        <a href="https://www.geeksforgeeks.org/">open in new frame</a><br>
+
+
+        <form>
+            <label for="Name">Name:
+                <input type="text">
+            </label>
+        </form>
+        
+        
+        
+        
+        
+    </body>
+</html>
